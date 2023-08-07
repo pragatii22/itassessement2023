@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        
+        header {
+            text-align: center;
+            background-color: #62e7e7;
+            color: #30e86a;
+            padding: 10px;
+        }
+
+        
+        footer {
+            text-align: center;
+            background-color: #7abe95;
+            color: #0a0a0a;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="resume.html">Resume</a>
+            <a href="blog.html">Blog</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+    </header>
+    <main style="background-color: #c70ad8;">
+        <div class="slider-container">
+
+        </div>
+                <div class="slides">
+                    <img src="contact.jpg" alt="Image 2">
+                </div>
+        </div>
+    </main>
+
+    <main>
+        <form id="contactForm">
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                         <input type="text" id="name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                         <input type="email" id="email" required>
+                    </td>
+
+                </tr>
+                <tr>
+                   <td>
+                    <label for="message">Message:</label>
+                    <textarea id="message" required></textarea>
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="submitForm()">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+
+    <footer>
+        <p><a href="https://github.com/">GitHub</a></p>
+            <p><a href="https://twitter.com/">Twitter</a></p>
+            <p><a href="https://mail.google.com/"></a></p>
+            <p>Busan Main Street, Hangkook, Korea</p>
+            <p>Email: heesung@example.com</p>
+            <p>Phone: (000) 996-0228</p>
+    </footer>
+
+    <script>
+        function submitForm() {
+            alert("Form submitted successfully!");
+        }
+    </script>
+</body>
+</html>
