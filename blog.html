@@ -3,11 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enhypen - Blog</title>
-   
+    <title>My Blog</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; 
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #636e92; 
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333; 
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <header style="text-align: center; background-color: #d27ef4; color: #ffffff; padding: 10px;">
+    <header>
         <nav>
             <a href="index.html">Home</a>
             <a href="gallery.html">Gallery</a>
@@ -19,63 +67,43 @@
     </header>
 
     <main>
-        <style>
-            body {
-                background-color: #d27ef4; 
-            }
-            
-            th, td {
-                border: 1px solid #090808;
-                padding: 5px;
-                text-align: left;
-            }
-    
-            th {
-                background-color: #b49a9a; 
-            }
-        </style>
-        <h1>My Blog</h1>
-        <div class="blog-post">
-            <h2>BLOG</h2>
-            <p></p>
-        </div>
         
-        <form id="commentForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-
-            <label for="comment">Comment:</label>
-            <textarea id="comment" required></textarea>
-
-            <button type="submit">Submit Comment</button>
-        </form>
+        <article>
+            <h2>Youtube Video - easy way to cook fast</h2>
+            <p>If you are bored and cannot think what to cook and eat in meantime, this video will help you out. Learn how to cook 
+                fast and tasty food in few minutes. Watch the video
+                <a href="https://www.youtube.com/watch?v=Sm2LkPlBTTE" target="_blank" rel=""noopener>click here for the video!</a></p>
+        </article>
 
         <article>
-            <p class="post-date">Published on August 6, 2023</p>
-            <p class="post-author">By John Doe</p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Nullam id orci ut massa tincidunt venenatis ac vitae tortor. 
-                Sed sed nisi quis quam vehicula eleifend.
-            </p>
-            <p>
-                Fusce faucibus, est ac hendrerit consectetur, nunc ex dictum turpis, 
-                et pellentesque ipsum risus id lacus.
-            </p>
+            <h2>YouTube Video - Introduction to HTML</h2>
+            <p>If you're new to web development, this YouTube video will guide you through the basics of HTML. Learn how to create web 
+                pages, structure content, and use essential HTML tags. Watch the video
+                 <a href="https://www.youtube.com/watch?v=UB1O30fR-EE" target="_blank" rel="noopener">click here for the video!</a>.</p>
+        </article>
+
+        <article>
+            <h2>Google Search - Best Free Stock Photo Websites</h2>
+            <p>Looking for high-quality stock photos without breaking the bank? Conduct a Google search to find the best free stock photo 
+                websites. These sites offer a wide selection of images for your projects. Perform the search
+                  <a href="https://www.google.com/search?q=best+free+stock+photo+websites" target="_blank" rel="noopener">click here for the video!</a>.</p>
+        </article>
+
+        <article>
+            <h2>YouTube Video - How to Meditate for Beginners</h2>
+            <p>Meditation can have numerous benefits for your mental and physical well-being. If you're new to meditation,
+                 this YouTube video will teach you the basics of meditation and guide you through simple techniques to get started.
+                  Watch the video <a href="https://www.youtube.com/watch?v=inpok4MKVLM" target="_blank" rel="noopener">click here for the video!</a>.</p>
         </article>
     </main>
 
-    <footer style="text-align: center;">
-        <p>&copy; 2023 My Blog. All rights reserved.</p>
-        
+    <footer>
         <p><a href="https://github.com/">GitHub</a></p>
         <p><a href="https://twitter.com/">Twitter</a></p>
-        <p><a href="https://mail.google.com/"></a></p>
+        <p><a href="https://mail.google.com/">Email</a></p>
         <p>Busan Main Street, Hangkook, Korea</p>
         <p>Email: heesung@example.com</p>
         <p>Phone: (000) 996-0228</p>
-        
     </footer>
-
 </body>
 </html>
