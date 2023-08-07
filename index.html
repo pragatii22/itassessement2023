@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhypen - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        
+        .slider {
+            width: 100%;
+            height: 700px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: none;
+            width: 100%;
+            height: 700px;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .active {
+            display: block;
+        }
+
+        body {
+            background-color: #c983e4;
+        }
+
+        header {
+            background-color: #d27ef4;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center; 
+        }
+
+        header a {
+            color: #ffffff; 
+            text-decoration: none;
+            margin: 0 10px; 
+        }
+
+       
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            margin: 30px auto; 
+            width: 80%;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: rgb(166, 94, 174);
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="resume.html">Resume</a>
+            <a href="blog.html">Blog</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="slides active">
+                <img src="background.jpg" alt="Image 1">
+            </div>
+            <div class="slides">
+                <img src="mural2.jpg" alt="Image 2">
+            </div>
+            <div class="slides">
+                <img src="mural3.jpg" alt="Image 3">
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("slides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 2000); 
+            }
+        </script>
+
+        <div class="content">
+            <div class="image">
+                <img src="profileee.jpg" alt="About the picture!">
+            </div>
+            <div class="text">
+                <p>
+                    Hello and welcome to the Enhypen website! We honor creativity, talent, and skill here. Our portfolio includes images
+                     of various colleges, spare time activities, and, finally, office rush hour. Immerse yourself in an exciting 
+                     journey with our fascinating image slider, where each slide tells a different tale. Looking for a chance to connect? 
+                    Check out our contact page to get in touch with us directly. We appreciate your feedback and your presence on our
+                     platform. Enhypen provides an enjoyable experience for anyone, whether you are an art fan, a creative soul, or 
+                     simply looking for inspiration. Come and be a part of our lively community as we embark on an exciting journey of
+                      exploration and artistic expression. We celebrate the beauty of imagination and the power of visual storytelling together.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p><a href="https://github.com/">GitHub</a></p>
+            <p><a href="https://twitter.com/">Twitter</a></p>
+            <p><a href="https://mail.google.com/"></a></p>
+            <p>Busan Main Street, Hangkook, Korea</p>
+            <p>Email: heesung@example.com</p>
+            <p>Phone: (000) 996-0228</p>
+        </footer>
+        <div class="back-to-top" onclick="scrollToTop()">
+            Back to Top
+        </div>
+    
+        <script>
+            
+            function scrollToTop() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
+            }
+    
+            
+            window.onscroll = function() {
+                var backToTopButton = document.querySelector(".back-to-top");
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            };
+    
+            function submitForm() {
+                alert("Form submitted successfully!");
+            }
+        </script>
+    </body>
+    </html>
+    </main>
+</body>
+</html>
